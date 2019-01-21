@@ -3,7 +3,7 @@
 <%= @article.title%>
 <%= @article.content%>
 
-<h2> Would you like to delete it? </h2>
+<h2> Would you like to delete it? Press button below. </h2>
 
 <form action="/articles/<%= @article.id %>/delete" method="post">
     <input id="hidden" type="hidden" name="_method" value="delete">
